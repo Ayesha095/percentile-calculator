@@ -9,18 +9,19 @@ target.addEventListener('click',function(){
    var per=(total*100)/400;
 
    if(per>=80 && per<100){
-    var grade="a you are pass";
+    var grade="A you are pass";
    }
    else if(per>=60 && per<79){
-    var grade="Byou are pass";
+    var grade="B you are pass";
    }
-   else if(per>=60 && per<79){
-    var grade="Byou are pass";
+   else if(per>=40 && per<59){
+    var grade="C you are pass";
    }
-   else if(per>=60 && per<79){
-    var grade="Byou are pass";
+   else {
+    var grade="you are fail";
    }
 
 
-  document.getElementById('text').innerHTML=(total);
+  document.getElementById('text').innerHTML=`your marks${total} out of 400 <br> 
+  your percentage is ${per}% <br> Your Grade is ${grade}`;
 }) 
